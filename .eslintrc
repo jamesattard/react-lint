@@ -1,6 +1,7 @@
 {
   "globals": {
       "require": false,
+      "module": false,
   },
   "parserOptions": {
       "ecmaVersion": 7,
@@ -13,8 +14,9 @@
     "react",
     "react-native"
   ],
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended"],
   "rules": {
+    "prop-types" : 0,
     "comma-dangle" : 0,
     "react-native/split-platform-components": 2,
   },
