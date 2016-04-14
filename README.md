@@ -42,3 +42,5 @@ npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
   },
 }
 ```
+
+### Resources: https://github.com/yannickcr/eslint-plugin-react
