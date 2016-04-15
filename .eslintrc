@@ -1,7 +1,17 @@
 {
-  "globals": {
-      "require": false,
-      "module": false,
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "extends": ["plugin:react/recommended"],
+  "rules": {
+    "react-native/split-platform-components": 2,
+    "react-native/no-unused-styles": 2,
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+    }
   },
   "parserOptions": {
       "ecmaVersion": 7,
@@ -9,20 +19,5 @@
       "ecmaFeatures": {
           "jsx": true,
       }
-  },
-  "plugins": [
-    "react",
-    "react-native"
-  ],
-  "extends": ["eslint:recommended"],
-  "rules": {
-    "prop-types" : 0,
-    "comma-dangle" : 0,
-    "react-native/split-platform-components": 2,
-  },
-  "settings": {
-    "react": {
-      "pragma": "React",
-    }
   },
 }

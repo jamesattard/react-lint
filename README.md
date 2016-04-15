@@ -15,8 +15,19 @@ npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
 ## .eslintrc
 ````bash
 {
-  "globals": {
-      "require": false,
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "extends": ["plugin:react/recommended"],
+  "rules": {
+    "react-native/split-platform-components": 2,
+    "react-native/no-unused-styles": 2,
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+    }
   },
   "parserOptions": {
       "ecmaVersion": 7,
@@ -24,21 +35,6 @@ npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
       "ecmaFeatures": {
           "jsx": true,
       }
-  },
-  "plugins": [
-    "react",
-    "react-native"
-  ],
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
-  "rules": {
-    "comma-dangle" : 0,
-    "react-native/no-unused-styles": 2,
-    "react-native/split-platform-components": 2,
-  },
-  "settings": {
-    "react": {
-      "pragma": "React",
-    }
   },
 }
 ```
