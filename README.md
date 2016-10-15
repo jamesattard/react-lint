@@ -23,6 +23,7 @@ npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
   "rules": {
     "react-native/split-platform-components": 2,
     "react-native/no-unused-styles": 2,
+    "react/prop-types": 0,
   },
   "settings": {
     "react": {
